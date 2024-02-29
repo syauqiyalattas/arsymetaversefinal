@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@700&display=swap");
+
+:root {
+  --bgcolor: #020403;
+  --bgcolor2: #100a1b;
+  --white: #ffffff;
+  --fwbold: 700;
+  --fwextrabold: 800;
+  --fwsemibold: 600;
+  --fwmedium: 500;
+  --fwregular: 400;
+  --fwlight: 300;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bgcolor);
+  color: white;
+}
+
+.navbar {
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  --bs-navbar-padding-y: 0;
+}
+.arsy-navbar {
+  padding: 10px 60px 10px 60px;
+  border-bottom: 1px solid var(--white);
+  border-radius: 33px;
+}
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-grow: 1;
+  gap: 73px;
+}
+.navbar-nav .nav-link.active {
+  border: 1px solid transparent;
+  padding: 10px 26px 10px 26px;
+  border-radius: 22px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.07);
+  color: white;
+}
+.navbar-nav .nav-link {
+  padding: 10px 26px 10px 26px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-family: "Poppins";
+  font-weight: var(--fwregular);
+}
+
+.navbar-nav .nav-link:hover {
+  border: 1px solid transparent;
+  padding: 10px 26px 10px 26px;
+  border-radius: 22px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.07);
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+.nav-item a {
+  color: var(--white);
+  font-family: "Poppins";
+  font-weight: var(--fwregular);
+}
+.big-header {
+  margin: 107px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 84px;
+  font-weight: bold;
+  font-style: normal;
+  color: #fff;
+}
+.header {
+  text-align: center;
+}
+.bg-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.project {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.project-content {
+  max-width: 100%;
+  padding: 0 15px;
+}
+.project-content video {
+  max-width: 100%;
+  height: auto;
+}
+.project-content h4 {
+  opacity: 0.6;
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+  text-align: justify;
+}
+.prewiew {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Mengatur posisi horizontal ke tengah */
+  transform: translateX(
+    -50%
+  ); /* Menggeser posisi horizontal kembali setengah lebar elemen */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Ubah ke warna latar belakang yang Anda inginkan */
+  padding: 10px; /* Sesuaikan jarak antara teks dan tepi overlay */
+  color: white; /* Ubah warna teks sesuai kebutuhan */
+}
+.large-text h4 {
+    font-size: 26px;
+}
+
+.overlay button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 500;
+}
+.overlay button:hover {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+.video-container {
+  max-width: 800px;
+  margin: 500px auto 200px  ;
+  position: relative;
+  overflow: hidden;
+}
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+.footer {
+    background: var(--bgcolor2);
+    width: 100%;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-text {
+    color: var(--white);
+    font-family: 'Poppins';
+    font-weight: var(--fwregular);
+    font-size: 16px;
+}
+.implora-brand {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 450px) {
+    .prewiew img {
+        width: 490px;
+        height: 340px;
+        overflow: hidden;
+        margin: 70px;
+    }
+
+}
